@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #818479;
+}
+
+.samplePara{
+    background-color: #95BF74;
+    position: relative;
+    left: 18%;
+    top: 150px;
+    color: #1D2D44;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 2em;    
+    box-sizing: border-box;
+    width: 1000px;
+    padding: 50px;
+    margin: 50px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin: 2px 2px 2px 2px;
+    box-shadow: 1px 5px 5px #1D2D44;
+}
+
+#husky{
+    float: right;
+}

@@ -1,0 +1,12 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 10px;
+    background: url("http://i.imgur.com/b9r5sEL.jpg");
+    background-size: cover;
+}
+

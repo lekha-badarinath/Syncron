@@ -36,7 +36,7 @@ body,html{
 
 #submit{
     position: absolute;
-    bottom: -45px;
+    bottom: 15px;
     left: 102px;
     width: 100px;
     height: 30px;
@@ -52,11 +52,11 @@ input:focus, button:focus{
     background: #2EA8B8;
 }
 
-#displayInput{
-    position: absolute;
-    bottom: -160px;
+.displayInput{
+    position: relative;
+    bottom: -80px;
     left: -45px;
-    width: 291px;
+    width: 288px;
     height: 30px;
 }
 

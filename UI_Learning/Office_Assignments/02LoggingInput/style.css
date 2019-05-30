@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body,html{
+    background: #2EA8B8;
+}
+
+.input-background{
+    position: relative;
+    top: 200px;
+    left: 600px;
+    border: 0.5px solid rgba(46, 46, 45, 0.4);
+    border-radius: 7px;
+    background-color: rgba(46, 46, 45, 0.4);
+    width: 300px;
+    height: 320px;
+}
+
+.input{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+}
+
+#input{
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 0.5px solid white;
+}
+
+#submit{
+    position: absolute;
+    bottom: -45px;
+    left: 102px;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 0.5px solid white;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+#submit:hover{
+    background: #2EA8B8;
+}
+
+#displayInput{
+    position: absolute;
+    bottom: -160px;
+    left: -45px;
+    width: 291px;
+    height: 30px;
+}
+
+
+
+

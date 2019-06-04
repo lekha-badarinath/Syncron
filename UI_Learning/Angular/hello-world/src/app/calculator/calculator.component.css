@@ -1,0 +1,40 @@
+.calculate {
+  padding-left: 7px;
+  text-align: center;
+  background: #ffff4d;
+}
+
+.number {
+  position: relative;
+  left: 10px;
+  background: rgba(255, 255, 128);
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-left: 10px;
+  border: 0.5px solid black;
+  margin: 0px 20px 20px 0px;
+}
+
+.operation {
+  background: rgba(0, 0, 1, 0.2);
+  border: 0.5px solid black;
+  margin: 0px 20px 0 20px;
+  height: 50px;
+  width: 70px;
+}
+
+.operation:hover {
+  background: #a4f2e2;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+#result {
+  font-size: 24px;
+  font-style: monospace;
+  padding-bottom: 15px;
+}

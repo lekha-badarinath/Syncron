@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  background: rgb(188, 218, 108);
+}
+
+.componentTwo {
+  position: relative;
+  top: 50px;
+}
+
+.componentThree {
+  position: relative;
+  top: 55px;
+}
+
+.componentFour {
+  position: relative;
+  top: 80px;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+}
+.componentFive {
+  position: relative;
+  top: 55px;
+  width: 800px;
+  height: 500px;
+  /* border: 0.5px solid black; */
+  margin: 2px 2px 2px 2px;
+}
+p {
+  font-size: 30px;
+  padding: 10px 0px 0px 10px;
+}

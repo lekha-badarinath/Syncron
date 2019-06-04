@@ -1,0 +1,7 @@
+<div class="inputOne_display">
+  <div *ngIf="componentTwoUserID !== ''">
+    <p>Hi, {{ componentTwoUserID }}</p>
+    <p>What have you got to do today?</p>
+    <input type="text" (keyup.enter)="saveTask($event)" />
+  </div>
+</div>

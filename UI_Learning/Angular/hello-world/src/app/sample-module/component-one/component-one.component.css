@@ -1,0 +1,11 @@
+.parentComponent {
+  display: flex;
+}
+
+.childComponent {
+  border: 1px solid black;
+  width: 200px;
+  margin: 10px;
+  position: relative;
+  top: 50px;
+}

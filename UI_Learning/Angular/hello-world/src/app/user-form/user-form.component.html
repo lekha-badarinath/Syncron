@@ -1,0 +1,29 @@
+<form action="index.html" class="userInput">
+  <label for="userID">Enter the user ID</label><br />
+  <input
+    id="userID"
+    type="text"
+    [value]="user"
+    (keyup)="userID($event)"
+  /><br />
+  <p *ngIf="minLengthError">Id must be greater than 6 characters</p>
+  <label for="pass">Enter the password</label><br />
+  <input
+    id="pass"
+    type="text"
+    [value]="pass"
+    (keyup)="setPassword($event)"
+  /><br />
+  <p *ngIf="minPassLength">Password must have at least 6 characters.</p>
+  <label for="passConfirm">Re-enter the password</label><br />
+  <input
+    id="passConfirm"
+    type="text"
+    [value]="passConfirm"
+    (keyup)="confirmPassword($event)"
+  /><br />
+  <p *ngIf="passMismatchError">"Password Mismatch"</p>
+  <button id="submit" *ngIf="!minLengthError && !passMismatchError">
+    Submit
+  </button>
+</form>

@@ -1,0 +1,22 @@
+<div class="parentComponent">
+  <div class="inputOne">
+    <input
+      type="text"
+      id="userID"
+      placeholder="User ID"
+      [value]="userID"
+      (keyup.enter)="saveUserID($event)"
+    />
+  </div>
+  <div class="childComponent">
+    <app-component-two
+      [componentTwoUserID]="userID"
+      (sendTaskList)="acceptTaskList($event)"
+    ></app-component-two>
+  </div>
+  <div class="childComponent">
+    <app-component-three
+      [displayTaskList]="returnedTaskList"
+    ></app-component-three>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="toDoList">
+  <div class="header">
+    <h2 class="heading">To-Do App</h2>
+
+    <div class="hideCompletedTasks">
+      <input
+        type="checkbox"
+        class="checkBox"
+        id="hideCompletedTasks"
+        (click)="hideCompletedTasks()"
+      />
+      <label for="hideCompletedTasks">Hide completed tasks?</label>
+    </div>
+  </div>
+
+  <div class="inputTasks">
+    <input
+      type="text"
+      class="enterTask"
+      placeholder="What have to got to do today?"
+      (keydown.enter)="updateTask($event)"
+    />
+  </div>
+  <div>
+    <button
+      class="newTask"
+      *ngFor="let task of updateTaskList"
+      (click)="updateCompletedTasks(task)"
+    >
+      {{ task }}
+    </button>
+  </div>
+
+  <div class="displayCompletedTasks" *ngIf="hideCompletedTask">
+    <p class="completedTask" *ngFor="let task of completedTask">
+      {{ task }}
+    </p>
+  </div>
+</div>
+
+<!-- <div>
+  <input
+    #myVariable
+    type="text"
+    name="text"
+    (keyup)="sample(myVariable.value)"
+    ngModel
+  />
+  <p>{{ myVariable.value }}</p>
+</div> -->

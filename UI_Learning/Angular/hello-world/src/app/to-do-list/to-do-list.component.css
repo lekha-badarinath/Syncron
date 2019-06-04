@@ -1,0 +1,84 @@
+* {
+  padding: 3px;
+}
+
+/* .toDoList {
+  position: relative;
+  left: 500px;
+  background: rgba(58, 181, 197);
+  width: 480px;
+  height: 500px;
+  margin: 20px 0px 20px 15px;
+} */
+
+/* .heading {
+  text-align: center;
+  position: relative;
+  bottom: 18px;
+  font-size: 28px;
+} */
+
+/* .hideCompletedTasks {
+  position: relative;
+  left: 295px;
+  top: 20px;
+  font-size: 16px;
+} */
+
+/* .inputTasks {
+  position: relative;
+  left: 18px;
+  bottom: 21px;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+} */
+
+/* .displayCompletedTasks {
+  position: relative;
+  left: 480px;
+  bottom: 429px;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  text-decoration: line-through;
+}
+
+button:active {
+  text-decoration: line-through;
+}
+
+.enterTask {
+  position: relative;
+  left: 40px;
+  bottom: 30px;
+  background: rgba(255, 255, 250, 0.6);
+  border: 1px solid rgba(255, 255, 250, 0.6);
+  border-radius: 25px;
+  box-shadow: 1px 1px rgba(255, 255, 250, 0.8);
+  width: 350px;
+  height: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.newTask,
+.completedTask {
+  display: block;
+  position: relative;
+  bottom: 400px;
+  display: block;
+  text-align: left;
+  background: transparent;
+  width: 230px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 7px;
+  margin: 5px 0px 0px 10px;
+} */

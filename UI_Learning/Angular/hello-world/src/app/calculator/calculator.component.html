@@ -1,0 +1,30 @@
+<div class="calculate">
+  <div class="numbers">
+    <p>Enter any two numbers:</p>
+    <input
+      class="number"
+      type="number"
+      [value]="num1"
+      (keyup)="updateNum1($event)"
+    />
+    <input
+      class="number"
+      type="number"
+      [value]="num2"
+      (keyup)="updateNum2($event)"
+    /><br />
+    <button class="operation" id="add" (click)="add()">
+      add
+    </button>
+    <button class="operation" id="subtract" (click)="subtract()">
+      subtract
+    </button>
+    <button class="operation" id="multiply" (click)="multiply()">
+      multiply
+    </button>
+    <button class="operation" id="divide" (click)="divide()">
+      divide
+    </button>
+    <p id="result">{{ result }}</p>
+  </div>
+</div>

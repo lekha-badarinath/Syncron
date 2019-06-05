@@ -2,15 +2,14 @@
   <div class="inputOne">
     <input
       type="text"
-      id="userID"
-      placeholder="User ID"
-      [value]="userID"
-      (keyup.enter)="saveUserID($event)"
+      placeholder="Enter the password"
+      [value]="password"
+      (keyup.enter)="checkPassword($event)"
     />
   </div>
   <div class="childComponent">
     <app-component-two
-      [componentTwoUserID]="userID"
+      [componentTwoUserID]="password"
       (sendTaskList)="acceptTaskList($event)"
     ></app-component-two>
   </div>

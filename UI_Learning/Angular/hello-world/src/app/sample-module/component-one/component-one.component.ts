@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestService } from '../../test.service';
 
 @Component({
   selector: 'app-component-one',
@@ -6,16 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component-one.component.css']
 })
 export class ComponentOneComponent implements OnInit {
-  userID = '';
+  password = '';
   returnedTaskList = [];
-  constructor() {}
-  saveUserID(event) {
-    this.userID = event.target.value;
+
+  constructor(private movieList: TestService) {}
+  displayMovie() {
+    this.movieList.listOfMovies().forEach(function(movie) {
+      console.log(movie);
+    });
+  }
+
+  checkPassword(event) {
+    if (event.target.value === 'qaz') {
+      this.password = event.target.value;
+    } else {
+      console.log('Access denied as the entered password was incorrect');
+    }
   }
 
   acceptTaskList(event) {
     this.returnedTaskList = event;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.displayMovie();
+  }
 }

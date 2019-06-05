@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { parse } from 'path';
+// import { TestService } from './test.service';
+import { LogService } from '../log.service';
 
 @Component({
   selector: 'app-calculator',
@@ -10,7 +12,11 @@ export class CalculatorComponent implements OnInit {
   num1 = 15;
   num2 = 10;
   result = 0;
-  constructor() {}
+  constructor(private src: LogService) {}
+
+  displayServiceMessage() {
+    this.src.printToLog('Hello! This is a service');
+  }
 
   add() {
     this.result = +this.num1 + +this.num2;
@@ -42,5 +48,7 @@ export class CalculatorComponent implements OnInit {
     console.log(this.num1);
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.displayServiceMessage();
+  }
 }

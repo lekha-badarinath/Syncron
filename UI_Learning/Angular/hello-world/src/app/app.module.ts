@@ -8,6 +8,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { SampleModuleModule } from './sample-module/sample-module.module';
+import { DummyModuleModule } from './dummy-module/dummy-module.module';
+import { LogService } from './log.service';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,13 @@ import { SampleModuleModule } from './sample-module/sample-module.module';
     UserFormComponent,
     ToDoListComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, SampleModuleModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SampleModuleModule,
+    DummyModuleModule
+  ],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

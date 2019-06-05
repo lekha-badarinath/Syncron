@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { parse } from 'path';
-// import { TestService } from './test.service';
 import { LogService } from '../log.service';
 
 @Component({

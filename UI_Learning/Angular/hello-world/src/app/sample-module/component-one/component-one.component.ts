@@ -12,7 +12,7 @@ export class ComponentOneComponent implements OnInit {
 
   constructor(private movieList: TestService) {}
   displayMovie() {
-    this.movieList.listOfMovies().forEach(function(movie) {
+    this.movieList.listOfMovies().forEach(movie => {
       console.log(movie);
     });
   }

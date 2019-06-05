@@ -29,7 +29,7 @@ export class ToDoListComponent implements OnInit {
 
   hideCompletedTasks() {
     this.hideCompletedTask = false;
-    console.log(this.accepted);
+    // console.log(this.accepted);
   }
 
   // sample(val) {

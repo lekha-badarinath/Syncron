@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ComponentOneComponent } from './component-one/component-one.component';
 import { ComponentTwoComponent } from './component-two/component-two.component';
 import { ComponentThreeComponent } from './component-three/component-three.component';
+
 import { TestService } from '../test.service';
 
 @NgModule({
@@ -12,7 +13,7 @@ import { TestService } from '../test.service';
     ComponentThreeComponent
   ],
   imports: [CommonModule],
-  exports: [ComponentOneComponent, ComponentTwoComponent],
+  exports: [ComponentOneComponent],
   providers: [TestService]
 })
 export class SampleModuleModule {}

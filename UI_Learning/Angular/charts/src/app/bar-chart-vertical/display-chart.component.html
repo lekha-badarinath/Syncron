@@ -1,3 +1,23 @@
+<button (click)="toggle()">
+  {{ isVertical ? 'Show Horizontal' : 'Show Vertical' }}
+</button>
+<ngx-charts-bar-horizontal
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="results"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+  *ngIf="!isVertical"
+>
+</ngx-charts-bar-horizontal>
+
 <ngx-charts-bar-vertical
   [view]="view"
   [scheme]="colorScheme"
@@ -11,5 +31,6 @@
   [xAxisLabel]="xAxisLabel"
   [yAxisLabel]="yAxisLabel"
   (select)="onSelect($event)"
+  *ngIf="isVertical"
 >
 </ngx-charts-bar-vertical>

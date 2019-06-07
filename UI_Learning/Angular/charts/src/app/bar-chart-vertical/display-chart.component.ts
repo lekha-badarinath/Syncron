@@ -13,7 +13,7 @@ export class DisplayChartComponent implements OnInit {
   multi: any[];
 
   view: any[] = [700, 300];
-
+  isVertical = false;
   // options
   showXAxis = true;
   showYAxis = true;
@@ -37,6 +37,10 @@ export class DisplayChartComponent implements OnInit {
       this.results = data;
       console.log(this.results);
     });
+  }
+
+  toggle() {
+    this.isVertical = !this.isVertical;
   }
   ngOnInit() {
     this.display();

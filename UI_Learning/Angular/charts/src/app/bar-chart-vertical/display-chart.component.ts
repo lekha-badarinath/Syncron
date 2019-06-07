@@ -8,34 +8,34 @@ import { FetchDataService } from '../fetch-data.service';
   styleUrls: ['./display-chart.component.css']
 })
 export class DisplayChartComponent implements OnInit {
-  constructor(private userData: FetchDataService) {}
-  view: any = [700, 800];
+  // chart - vertical-bar
+  single: any[];
+  multi: any[];
+
+  view: any[] = [700, 300];
+
+  // options
   showXAxis = true;
   showYAxis = true;
   gradient = false;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Number';
+  xAxisLabel = 'Country';
   showYAxisLabel = true;
   yAxisLabel = 'Value';
-  timeline = true;
 
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
 
-  // line, area
-  autoScale = true;
-
-  // pie
-  showLabels = true;
-  explodeSlices = false;
-  doughnut = false;
+  results = [];
+  constructor(private userData: FetchDataService) {}
 
   display() {
     const userData$ = this.userData.getData();
     userData$.subscribe((data: any) => {
-      console.log(data);
+      this.results = data;
+      console.log(this.results);
     });
   }
   ngOnInit() {

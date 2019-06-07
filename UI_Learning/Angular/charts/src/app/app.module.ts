@@ -6,11 +6,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DisplayChartComponent } from './bar-chart-vertical/display-chart.component';
-import { BarChartHorizontalComponent } from './bar-chart-horizontal/bar-chart-horizontal.component';
+import { DisplayChartComponent } from './display-chart/display-chart.component';
+import { DisplayOptionsComponent } from './display-options/display-options.component';
 
 @NgModule({
-  declarations: [AppComponent, DisplayChartComponent, BarChartHorizontalComponent],
+  declarations: [AppComponent, DisplayChartComponent, DisplayOptionsComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

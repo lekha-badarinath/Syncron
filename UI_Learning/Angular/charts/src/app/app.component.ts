@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'charts';
+  chartOption = '';
+  acceptOption(event) {
+    this.chartOption = event;
+    console.log('event transmitted- ' + event);
+  }
 }

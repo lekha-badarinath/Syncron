@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BarChartHorizontalComponent } from './bar-chart-horizontal.component';
+import { DisplayOptionsComponent } from './display-options.component';
 
-describe('BarChartHorizontalComponent', () => {
-  let component: BarChartHorizontalComponent;
-  let fixture: ComponentFixture<BarChartHorizontalComponent>;
+describe('DisplayOptionsComponent', () => {
+  let component: DisplayOptionsComponent;
+  let fixture: ComponentFixture<DisplayOptionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BarChartHorizontalComponent ]
+      declarations: [ DisplayOptionsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BarChartHorizontalComponent);
+    fixture = TestBed.createComponent(DisplayOptionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

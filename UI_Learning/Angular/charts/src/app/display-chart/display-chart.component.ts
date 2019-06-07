@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 // import { GetDataService } from '../get-data.service';
 import { FetchDataService } from '../fetch-data.service';
 
@@ -29,6 +29,7 @@ export class DisplayChartComponent implements OnInit {
   };
 
   results = [];
+  @Input() chartOption;
   constructor(private userData: FetchDataService) {}
 
   display() {
@@ -39,8 +40,27 @@ export class DisplayChartComponent implements OnInit {
     });
   }
 
-  toggle() {
+  toggleFunction() {
     this.isVertical = !this.isVertical;
+  }
+
+  selectFunction() {
+    switch (this.chartOption) {
+      case 'horizontal':
+        console.log('Switch case is working, we are in the horizontal block');
+        // this.isVertical = false;
+        break;
+      case 'vertical':
+        console.log('Switch case is working, we are in the vertical block');
+      // this.isVertical = true;
+
+      case 'pie':
+        console.log('Switch case is working, we are in the pie block');
+    }
+  }
+
+  ngOnChanges() {
+    this.selectFunction();
   }
   ngOnInit() {
     this.display();

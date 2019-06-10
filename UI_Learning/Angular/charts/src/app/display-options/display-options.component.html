@@ -1,15 +1,22 @@
 <div class="parentClass">
   <h2>Chart type</h2>
-  <div class="options">
-    <button (click)="updateOption('horizontal')">
-      Horizontal Bar
-    </button>
+  <button class="dropdown" (click)="updateOption('')">Chart type</button>
+  <ul class="options">
+    <li>
+      <button (click)="updateOption('horizontal')">
+        Horizontal Bar
+      </button>
+    </li>
     <!--buttons should not have values-->
-    <button (click)="updateOption('vertical')">
-      Vertical Bar
-    </button>
-    <button (click)="updateOption('pie')">
-      Pie Chart
-    </button>
-  </div>
+    <li>
+      <button (click)="updateOption('vertical')">
+        Vertical Bar
+      </button>
+    </li>
+    <li>
+      <button (click)="updateOption('pie')">
+        Pie Chart
+      </button>
+    </li>
+  </ul>
 </div>

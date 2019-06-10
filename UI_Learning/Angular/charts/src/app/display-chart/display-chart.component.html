@@ -4,7 +4,7 @@
 <ngx-charts-bar-horizontal
   [view]="view"
   [scheme]="colorScheme"
-  [results]="results"
+  [results]="results | async"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -47,3 +47,14 @@
   (select)="onSelect($event)"
   *ngIf="chartOption === 'pie'"
 ></ngx-charts-pie-chart>
+
+<div class="customization">
+  <div class="xAxis">
+    <input type="checkbox" id="xAxis" (click)="xAxisToggle()" checked />
+    <label for="xAxis">Display X-axis</label>
+  </div>
+  <div class="yAxis">
+    <input type="checkbox" id="yAxis" (click)="yAxisToggle()" checked />
+    <label for="yAxis">Display Y-axis</label>
+  </div>
+</div>

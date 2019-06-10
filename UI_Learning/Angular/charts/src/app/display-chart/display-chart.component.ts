@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 // import { GetDataService } from '../get-data.service';
 import { FetchDataService } from '../fetch-data.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-display-chart',
@@ -25,19 +26,15 @@ export class DisplayChartComponent implements OnInit {
   yAxisLabel = 'Value';
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ['#FFF089', '#FFAD75', '#B5F4BC', '#A5FFE0']
   };
 
-  results = [];
+  results: Observable<any>;
   @Input() chartOption;
   constructor(private userData: FetchDataService) {}
 
   display() {
-    const userData$ = this.userData.getData();
-    userData$.subscribe((data: any) => {
-      this.results = data;
-      console.log(this.results);
-    });
+    this.results = this.userData.getData();
   }
 
   toggleFunction() {
@@ -52,11 +49,21 @@ export class DisplayChartComponent implements OnInit {
         break;
       case 'vertical':
         console.log('Switch case is working, we are in the vertical block');
-      // this.isVertical = true;
+        // this.isVertical = true;
+        break;
 
       case 'pie':
         console.log('Switch case is working, we are in the pie block');
+        break;
     }
+  }
+
+  xAxisToggle() {
+    this.showXAxis = !this.showXAxis;
+  }
+
+  yAxisToggle() {
+    this.showYAxis = !this.showYAxis;
   }
 
   ngOnChanges() {

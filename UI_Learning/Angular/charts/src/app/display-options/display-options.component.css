@@ -1,16 +1,38 @@
-button {
+.dropdown {
+  background-color: #4c4d4c;
+  color: white;
+  padding: 10px;
+  width: 350px;
+  font-size: 16px;
+  border: none;
+}
+
+.options {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 90px;
+  left: -24px;
+}
+.options button {
   display: block;
-  padding: 15px 0px 15px 0px;
-  background: transparent;
-  font-size: 24px;
-  width: 250px;
-  height: 80px;
-  border: 0.5px solid black;
-  margin: 15px 0px 15px 0px;
+  width: 350px;
+  padding: 10px;
+  background-color: #4c4d4c;
+  color: white;
+  border: none;
+  border-top: 0.5px solid white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+li button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+.parentClass:hover .options {
+  display: block;
 }
 
 button:focus {
   outline: none;
-  background-color: bisque;
-  border: 0.5px solid bisque;
 }

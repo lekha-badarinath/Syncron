@@ -2,19 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class FetchDataService {
   constructor(private http: HttpClient) {}
 
-  getData() {
-    return this.http.get('http://localhost:3000/data');
-
+  fetchUserData() {
+    return this.http.get('http://localhost:3000/user_data');
   }
-
-  getComplexData() {
-    return this.http.get('http://localhost:3000/data_complex');
-
-  }
-
 }

@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2d65478-375b-4866-8a1f-a32155d22c03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/src/app/display-options/display-options.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/display-options/display-options.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/src/app/display-options/display-options.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/display-options/display-options.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/src/assets/charts_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/assets/charts_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/src/app/fetch-data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/charts/src/app/fetch-data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-world/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-world/src/app/user-form/user-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world/src/app/user-form/user-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-display_mockData.json" beforeDir="false" afterPath="$PROJECT_DIR$/user-display/src/assets/user-display_mockData.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,34 +25,35 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/charts/src/assets/charts_data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="36" column="43" selection-start-line="36" selection-end-line="37" />
-              <folding>
-                <element signature="e#115#172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/user-display/src/app/select-and-display/select-user/select-user.component.ts">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html">
+        <entry file="file://$PROJECT_DIR$/user-display/src/app/select-and-display/select-user/select-user.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-display/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-display/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>resul</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -56,26 +61,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html" />
+        <option value="$PROJECT_DIR$/charts/src/app/fetch-data.service.ts" />
         <option value="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.ts" />
+        <option value="$PROJECT_DIR$/charts/src/app/display-options/display-options.component.html" />
+        <option value="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html" />
+        <option value="$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.css" />
+        <option value="$PROJECT_DIR$/hello-world/package.json" />
+        <option value="$PROJECT_DIR$/hello-world/src/app/user-form/user-form.component.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-        <option value="$PROJECT_DIR$/.idea/Angular.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="87" />
-    <option name="width" value="1750" />
-    <option name="height" value="1030" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -83,7 +83,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,53 +93,64 @@
             <path>
               <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="charts" type="462c0819:PsiDirectoryNode" />
+              <item name="user-display" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="charts" type="462c0819:PsiDirectoryNode" />
+              <item name="user-display" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="charts" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="charts" type="462c0819:PsiDirectoryNode" />
+              <item name="user-display" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="display-chart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="charts" type="462c0819:PsiDirectoryNode" />
+              <item name="user-display" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="select-and-display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Angular" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
+              <item name="user-display" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="select-and-display" type="462c0819:PsiDirectoryNode" />
+              <item name="select-user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaScript30-recreation" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\lekbad\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\lekbad\OneDrive - Syncron\Syncron\UI_Learning\Angular\hello-world\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lekbad\OneDrive - Syncron\Syncron\UI_Learning\Angular\user-display\src\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,32 +175,53 @@
       <option name="presentableId" value="Default" />
       <updated>1560160309191</updated>
       <workItem from="1560160310424" duration="576000" />
+      <workItem from="1560163167594" duration="1343000" />
+      <workItem from="1560225293476" duration="418000" />
+      <workItem from="1560225731412" duration="1960000" />
+      <workItem from="1560227712167" duration="56000" />
+      <workItem from="1560227782963" duration="489000" />
+      <workItem from="1560228286971" duration="119000" />
+      <workItem from="1560228421755" duration="196000" />
+      <workItem from="1560228629662" duration="107000" />
+      <workItem from="1560228751027" duration="89000" />
+      <workItem from="1560228853625" duration="247000" />
+      <workItem from="1560229114752" duration="94000" />
+      <workItem from="1560229225176" duration="2637000" />
+      <workItem from="1560239874145" duration="188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576000" />
+    <option name="totallyTimeSpent" value="8519000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1944" y="212" width="1400" height="824" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32904148" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="GraphQL" order="9" weight="0.32904148" />
+      <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32968238" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32858709" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -200,27 +231,152 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/charts/src/assets/charts_data.json">
+    <entry file="file://$PROJECT_DIR$/charts/node_modules/@angular/core/src/metadata/directives.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7" />
+        <state relative-caret-position="219">
+          <caret line="467" column="4" selection-start-line="467" selection-start-column="4" selection-end-line="467" selection-end-column="4" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/src/app/display-options/display-options.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/src/app/display-options/display-options.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="460">
+          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="36" column="43" selection-start-line="36" selection-end-line="37" />
+        <state relative-caret-position="676">
+          <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
           <folding>
-            <element signature="e#115#172#0" expanded="true" />
+            <element signature="n#!!block;n#toggleFunction#0;n#DisplayChartComponent#0" />
+            <element signature="n#!!block;n#ngOnInit#0;n#DisplayChartComponent#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/charts/src/app/fetch-data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/src/assets/charts_data.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/src/app/display-chart/display-chart.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/assets/user-display_mockData.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts/node_modules/accepts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/src/app/calculator/calculator.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/src/app/calculator/calculator.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/src/app/calculator/calculator.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/src/app/user-form/user-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world/src/tslint.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/app/select-and-display/select-user/select-user.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/app/select-and-display/select-user/select-user.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/app/select-and-display/select-user/select-user.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-display/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 // import { GetDataService } from '../get-data.service';
 import { FetchDataService } from '../fetch-data.service';
-import {Observable} from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-display-chart',
@@ -30,11 +30,17 @@ export class DisplayChartComponent implements OnInit {
   };
 
   results: Observable<any>;
+  resultsComplex: Observable<any>;
   @Input() chartOption;
   constructor(private userData: FetchDataService) {}
 
   display() {
     this.results = this.userData.getData();
+  }
+
+  displayComplexData() {
+    this.resultsComplex = this.userData.getComplexData();
+    // console.log(this.resultsComplex);
   }
 
   toggleFunction() {
@@ -68,8 +74,11 @@ export class DisplayChartComponent implements OnInit {
 
   ngOnChanges() {
     this.selectFunction();
+    this.displayComplexData();
   }
+
   ngOnInit() {
     this.display();
+    this.displayComplexData();
   }
 }

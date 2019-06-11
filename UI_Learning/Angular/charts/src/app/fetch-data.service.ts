@@ -11,4 +11,10 @@ export class FetchDataService {
     const userData = this.http.get('http://localhost:3000/data');
     return userData;
   }
+
+  getComplexData() {
+    const userData = this.http.get('http://localhost:3000/data_complex');
+    return userData;
+  }
+
 }

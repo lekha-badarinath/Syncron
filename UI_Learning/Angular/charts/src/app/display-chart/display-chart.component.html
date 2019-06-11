@@ -21,7 +21,7 @@
 <ngx-charts-bar-vertical
   [view]="view"
   [scheme]="colorScheme"
-  [results]="results"
+  [results]="results | async"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -38,7 +38,7 @@
 <ngx-charts-pie-chart
   [view]="view"
   [scheme]="colorScheme"
-  [results]="results"
+  [results]="results | async"
   [legend]="showLegend"
   [explodeSlices]="explodeSlices"
   [labels]="showLabels"
@@ -47,6 +47,72 @@
   (select)="onSelect($event)"
   *ngIf="chartOption === 'pie'"
 ></ngx-charts-pie-chart>
+
+<ngx-charts-bar-vertical-stacked
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="resultsComplex | async"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+*ngIf="chartOption === 'bvs'">
+</ngx-charts-bar-vertical-stacked>
+
+<ngx-charts-bar-horizontal-stacked
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="resultsComplex | async"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+*ngIf="chartOption === 'bhs'">
+</ngx-charts-bar-horizontal-stacked>
+
+<!--Bar - Vertical - Grouped-->
+<ngx-charts-bar-vertical-2d
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="resultsComplex | async"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+*ngIf="chartOption === 'bvGrouped'">
+</ngx-charts-bar-vertical-2d>
+
+<!--Bar - Horizontal - Grouped-->
+<ngx-charts-bar-horizontal-2d
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="resultsComplex | async"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+*ngIf="chartOption === 'bhGrouped'">
+</ngx-charts-bar-horizontal-2d>
 
 <div class="customization">
   <div class="xAxis">

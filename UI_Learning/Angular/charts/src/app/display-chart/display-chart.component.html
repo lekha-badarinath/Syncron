@@ -115,12 +115,16 @@
 </ngx-charts-bar-horizontal-2d>
 
 <div class="customization">
-  <div class="xAxis">
-    <input type="checkbox" id="xAxis" (click)="xAxisToggle()" checked />
-    <label for="xAxis">Display X-axis</label>
-  </div>
-  <div class="yAxis">
-    <input type="checkbox" id="yAxis" (click)="yAxisToggle()" checked />
-    <label for="yAxis">Display Y-axis</label>
+
+<!--  Option to display/hide X-Axis and Y-Axis-->
+  <div class="axisCustomization">
+    <div class="xAxis">
+      <input type="checkbox" id="xAxis" (click)="xAxisToggle()" checked />
+      <label for="xAxis">Display X-axis</label>
+    </div>
+    <div class="yAxis">
+      <input type="checkbox" id="yAxis" (click)="yAxisToggle()" checked />
+      <label for="yAxis">Display Y-axis</label>
+    </div>
   </div>
 </div>

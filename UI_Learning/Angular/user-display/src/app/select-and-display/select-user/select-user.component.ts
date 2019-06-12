@@ -14,7 +14,7 @@ export class SelectUserComponent implements OnInit {
   fetchUserName() {
     const data$ = this.fetch.fetchUserData().subscribe((data) => {
             data.forEach((element) =>{
-              this.firstNames.push(element.first_name);
+              this.firstNames.push(element.last_name + ', ' + element.first_name);
             });
       // console.log(this.fetchedData);
     });

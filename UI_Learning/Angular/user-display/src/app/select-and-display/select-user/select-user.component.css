@@ -1,0 +1,13 @@
+button{
+  display: block;
+  margin: 2px 0px 2px 0px;
+  height: 30px;
+  width: 250px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid deepskyblue;
+}
+
+button:focus {
+  outline: none;
+}

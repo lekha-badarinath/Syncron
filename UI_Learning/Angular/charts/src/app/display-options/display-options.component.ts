@@ -7,11 +7,19 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class DisplayOptionsComponent implements OnInit {
   @Output() sendOption = new EventEmitter();
+  @Output() sendThemeOption = new EventEmitter();
   constructor() {}
 
   updateOption(chartType: string) {
     this.sendOption.emit(chartType);
   }
 
-  ngOnInit() {}
+  updateTheme(theme: string) {
+    this.sendThemeOption.emit(theme);
+  }
+
+  ngOnInit() {
+    this.updateTheme('default');
+    this.updateOption('vertical');
+  }
 }

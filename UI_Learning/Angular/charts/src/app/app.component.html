@@ -10,10 +10,14 @@
     <div class="displayOptions">
       <app-display-options
         (sendOption)="acceptOption($event)"
+        (sendThemeOption)="acceptThemeOption($event)"
       ></app-display-options>
     </div>
     <div class="displayCharts">
-      <app-display-chart [chartOption]="chartOption"></app-display-chart>
+      <app-display-chart
+        [chartOption]="chartOption"
+        [themeOption]="themeOption"
+      ></app-display-chart>
     </div>
   </body>
 </html>

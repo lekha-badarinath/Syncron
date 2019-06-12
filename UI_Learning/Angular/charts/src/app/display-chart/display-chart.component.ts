@@ -3,12 +3,14 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FetchDataService } from '../fetch-data.service';
 import { Observable } from 'rxjs';
 
+
 @Component({
   selector: 'app-display-chart',
   templateUrl: './display-chart.component.html',
   styleUrls: ['./display-chart.component.css']
 })
 export class DisplayChartComponent implements OnInit {
+
   // chart - vertical-bar
   single: any[];
   multi: any[];
@@ -25,13 +27,24 @@ export class DisplayChartComponent implements OnInit {
   showYAxisLabel = true;
   yAxisLabel = 'Value';
 
+  arr = [];
   colorScheme = {
-    domain: ['#FFF089', '#FFAD75', '#B5F4BC', '#A5FFE0']
+    domain: this.arr
   };
 
+  themes = {
+    default: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
+    light: ['#FFF089', '#FFAD75', '#B5F4BC', '#A5FFE0'],
+    dark: ['#250902', '#FFA552', '#BA5624', '#FCDE9C'],
+  };
+
+  // observables
   results: Observable<any>;
   resultsComplex: Observable<any>;
+
+  // inputs
   @Input() chartOption;
+  @Input() themeOption;
   constructor(private userData: FetchDataService) {}
 
   display() {
@@ -72,9 +85,17 @@ export class DisplayChartComponent implements OnInit {
     this.showYAxis = !this.showYAxis;
   }
 
+  selectTheme() {
+    this.colorScheme = {
+      domain: this.themes[this.themeOption]
+    };
+
+  }
+
   ngOnChanges() {
     this.selectFunction();
-    this.displayComplexData();
+    this.selectTheme();
+
   }
 
   ngOnInit() {

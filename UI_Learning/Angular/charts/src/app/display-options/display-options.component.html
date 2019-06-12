@@ -1,6 +1,6 @@
-<div class="parentClass">
+<div class="chooseChartType">
   <h2>Chart type</h2>
-  <button class="dropdown" (click)="updateOption('')">Chart type</button>
+  <button class="dropdown">Chart type</button>
   <ul class="options">
     <li>
       <button (click)="updateOption('horizontal')">
@@ -38,5 +38,16 @@
         Bar-Horizontal-Grouped
       </button>
     </li>
+  </ul>
+</div>
+
+<!--Choose color theme-->
+<div class="chooseColorTheme">
+  <h2>Choose color theme</h2>
+  <button class="dropdown">Color Theme</button>
+  <ul class="options colorOptions">
+    <li><button class="light" (click)="updateTheme('default')">Default</button></li>
+    <li><button class="dark" (click)="updateTheme('dark')">Dark</button></li>
+    <li><button class="dark" (click)="updateTheme('light')">Light</button></li>
   </ul>
 </div>

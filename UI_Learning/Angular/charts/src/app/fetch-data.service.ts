@@ -7,13 +7,14 @@ import { HttpClient } from '@angular/common/http';
 export class FetchDataService {
   constructor(private http: HttpClient) {}
 
-  getData() {
-    return this.http.get('http://localhost:3000/data');
+  public async getData() {
+    const response = await this.http.get('http://localhost:3000/data').toPromise();
+    return response;
 
   }
 
-  getComplexData() {
-    return this.http.get('http://localhost:3000/data_complex');
+  public async getComplexData() {
+    return await this.http.get('http://localhost:3000/data_complex').toPromise();
 
   }
 

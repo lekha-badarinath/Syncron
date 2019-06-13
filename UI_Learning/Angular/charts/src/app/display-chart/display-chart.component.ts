@@ -3,6 +3,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FetchDataService } from '../fetch-data.service';
 import { Observable } from 'rxjs';
 
+const   themes = {
+  default: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
+  light: ['#FFF089', '#FFAD75', '#B5F4BC', '#A5FFE0'],
+  dark: ['#67848C', '#5A6C70', '#8C9B9E', '#376068'],
+  creme: ['#B7CCC6', '#F2DEC1', '#FFA07A', '#FF7F50']
+};
 
 @Component({
   selector: 'app-display-chart',
@@ -32,28 +38,23 @@ export class DisplayChartComponent implements OnInit {
     domain: this.arr
   };
 
-  themes = {
-    default: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
-    light: ['#FFF089', '#FFAD75', '#B5F4BC', '#A5FFE0'],
-    dark: ['#250902', '#FFA552', '#BA5624', '#FCDE9C'],
-  };
-
   // observables
-  results: Observable<any>;
-  resultsComplex: Observable<any>;
+  results: any;
+  resultsComplex: any;
 
   // inputs
   @Input() chartOption;
   @Input() themeOption;
+
   constructor(private userData: FetchDataService) {}
 
-  display() {
-    this.results = this.userData.getData();
+  async display() {
+    this.results = await this.userData.getData();
   }
 
-  displayComplexData() {
-    this.resultsComplex = this.userData.getComplexData();
-    // console.log(this.resultsComplex);
+  async displayComplexData() {
+    this.resultsComplex = await this.userData.getComplexData();
+
   }
 
   toggleFunction() {
@@ -87,7 +88,7 @@ export class DisplayChartComponent implements OnInit {
 
   selectTheme() {
     this.colorScheme = {
-      domain: this.themes[this.themeOption]
+      domain: themes[this.themeOption]
     };
 
   }

@@ -46,8 +46,9 @@
   <h2>Choose color theme</h2>
   <button class="dropdown">Color Theme</button>
   <ul class="options colorOptions">
-    <li><button class="light" (click)="updateTheme('default')">Default</button></li>
-    <li><button class="dark" (click)="updateTheme('dark')">Dark</button></li>
-    <li><button class="dark" (click)="updateTheme('light')">Light</button></li>
+    <li><button (click)="updateTheme('default')">Default</button></li>
+    <li><button (click)="updateTheme('dark')">Dark</button></li>
+    <li><button (click)="updateTheme('light')">Light</button></li>
+    <li><button (click)="updateTheme('creme')">Cremes</button></li>
   </ul>
 </div>

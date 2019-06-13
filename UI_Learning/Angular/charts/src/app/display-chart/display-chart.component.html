@@ -1,27 +1,11 @@
 <!-- <button (click)="toggleFunction()">
   {{ isVertical ? 'Show Horizontal' : 'Show Vertical' }}
 </button> -->
-<ngx-charts-bar-horizontal
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="results | async"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  (select)="onSelect($event)"
-  *ngIf="chartOption === 'horizontal'"
->
-</ngx-charts-bar-horizontal>
 
 <ngx-charts-bar-vertical
   [view]="view"
   [scheme]="colorScheme"
-  [results]="results | async"
+  [results]="results"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -38,7 +22,7 @@
 <ngx-charts-pie-chart
   [view]="view"
   [scheme]="colorScheme"
-  [results]="results | async"
+  [results]="results"
   [legend]="showLegend"
   [explodeSlices]="explodeSlices"
   [labels]="showLabels"
@@ -51,7 +35,7 @@
 <ngx-charts-bar-vertical-stacked
   [view]="view"
   [scheme]="colorScheme"
-  [results]="resultsComplex | async"
+  [results]="resultsComplex"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -67,7 +51,7 @@
 <ngx-charts-bar-horizontal-stacked
   [view]="view"
   [scheme]="colorScheme"
-  [results]="resultsComplex | async"
+  [results]="resultsComplex"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -84,7 +68,7 @@
 <ngx-charts-bar-vertical-2d
   [view]="view"
   [scheme]="colorScheme"
-  [results]="resultsComplex | async"
+  [results]="resultsComplex"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
@@ -101,7 +85,7 @@
 <ngx-charts-bar-horizontal-2d
   [view]="view"
   [scheme]="colorScheme"
-  [results]="resultsComplex | async"
+  [results]="resultsComplex"
   [gradient]="gradient"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"

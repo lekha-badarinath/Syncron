@@ -1,0 +1,32 @@
+.parent{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-container {
+  display: grid; /*The grid will be as big as the whole page if it is not an inline-grid*/
+  width: 300px;
+  grid-template-columns: auto auto auto; /*this will add columns*/
+  grid-gap: 2px;
+}
+
+.grid-container > div {
+  border: 1px solid #2ec4b6;
+  text-align: center;
+  padding: 5px;
+}
+
+.child1 {
+  /*grid-column-start: 1;*/
+  /*grid-column-end: 4;*/
+  grid-column: 1 / span 2; /*Alternate method - says start from column 1 and span for 2 columns*/
+}
+
+.child3 {
+  /*grid-column-start: 2;*/
+  /*grid-column-end: 4;*/
+  grid-column: 2/4; /*Alternate method - says start from column 2 and end at column 4*/
+}
+
+.drill-down-tree{
+  display:grid;
+}

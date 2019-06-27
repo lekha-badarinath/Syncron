@@ -11,6 +11,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DummyModuleModule } from './dummy-module/dummy-module.module';
 import { LogService } from './log.service';
 import { SampleModuleModule } from './sample-module/sample-module.module';
+import { DrilldownTreeComponent } from './drilldown-tree/drilldown-tree.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SampleModuleModule } from './sample-module/sample-module.module';
     CourseComponent,
     CalculatorComponent,
     UserFormComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    DrilldownTreeComponent
   ],
   imports: [
     BrowserModule,

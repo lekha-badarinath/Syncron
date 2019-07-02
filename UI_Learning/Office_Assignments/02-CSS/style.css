@@ -1,0 +1,13 @@
+.headerOne{
+    position: sticky;
+    top: 0px;
+    border: 0.5px solid seagreen;
+    background: seagreen;
+}
+
+.headerTwo{
+    position: sticky;
+    top: 30px;
+    border: 0.5px solid cyan;
+    background-color: cyan;
+}

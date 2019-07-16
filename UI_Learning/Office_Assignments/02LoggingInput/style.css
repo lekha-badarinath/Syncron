@@ -27,7 +27,7 @@ body,html{
     font-size: 22px;
 }
 
-#input{
+#input,#ip{
     width: 200px;
     height: 30px;
     background: transparent;
